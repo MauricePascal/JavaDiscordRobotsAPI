@@ -27,7 +27,7 @@ Work with votes
 ```
 
 ## Download
-[![Release](https://jitpack.io/v/DiscordBotList/DBL-Java-Library.svg)](https://jitpack.io/#DiscordBotList/DBL-Java-Library)
+[![](https://jitpack.io/v/MauricePascal/JavaDiscordRobotsAPI.svg)](https://jitpack.io/#MauricePascal/JavaDiscordRobotsAPI)
 
 Replace `VERSION` with the latest version or commit hash. The latest version can be found under releases.
 
