@@ -11,7 +11,7 @@ This is the official DiscordRobotsAPI for JDA. You can work with votes a so many
 This is the setup for your Bot. Replace "token" with the DiscordRobots Token of your Bot
  
 ```java
-    DiscordRobotsAPI drAPI = new DiscordRobotsAPI.Builder()
+    JDR jdr = new JDR.Builder()
         .setToken(token)
         .build();
 ```
