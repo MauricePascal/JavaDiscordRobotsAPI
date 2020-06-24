@@ -1,4 +1,4 @@
-# JavaDiscordRobotsAPI
+# JDR
 This is the official DiscordRobotsAPI for JDA. You can work with votes a so many more
 
 # Overview
@@ -7,7 +7,7 @@ This is the official DiscordRobotsAPI for JDA. You can work with votes a so many
 * [Download](https://github.com/MauricePascal/JavaDiscordRobotsAPI/blob/master/README.md#download)
 * [Support](https://github.com/MauricePascal/JavaDiscordRobotsAPI/blob/master/README.md#support)
 
-## Creating the DiscordRobotsAPI Object
+## Creating the JDR Object
 This is the setup for your Bot. Replace "token" with the DiscordRobots Token of your Bot
  
 ```java
