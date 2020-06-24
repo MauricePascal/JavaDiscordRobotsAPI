@@ -20,8 +20,10 @@ This is the setup for your Bot. Replace "token" with the DiscordRobots Token of 
 Work with votes
 
 ```java
-    String userId = [...] //User ID
-    if(Votes.isVoted(userId)) {
+    String userId = [...]
+    //or
+    long userId = [...]
+    if(Vote.isVoted(userId)) {
         [...]
     }
 ```
