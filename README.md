@@ -35,7 +35,7 @@ Replace `VERSION` with the latest version or commit hash. The latest version can
 
 #### Maven
 
-If Maven doesnt work, please download the [.jar File](keksstudios.tk/discordrobots/api/JDR.jar) and add it to your Bot
+If Maven doesnt work, please download the [.jar File](https://www.keksstudios.tk/discordrobots/api/JDR.jar) and add it to your Bot
 
 ```xml
 <repositories>
