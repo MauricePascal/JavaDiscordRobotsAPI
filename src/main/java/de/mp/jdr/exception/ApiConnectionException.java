@@ -3,10 +3,12 @@ package de.mp.jdr.exception;
  *  Created by Maurice-Pascal at 21:04 on 17.06.2020
  */
 
-public class ApiConnectionException extends Exception {
+public class ApiConnectionException extends Exception
+{
 
     //Code
-    public ApiConnectionException() {
+    public ApiConnectionException()
+    {
         super("Invalid Token");
     }
 

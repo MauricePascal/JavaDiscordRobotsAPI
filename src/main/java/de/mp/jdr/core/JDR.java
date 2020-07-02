@@ -5,15 +5,20 @@ package de.mp.jdr.core;
 
 import de.mp.jdr.impl.JDRImpl;
 
-public interface JDR {
-    class Builder {
+public interface JDR
+{
+    class Builder
+    {
         private String token = null;
-        public Builder token(String token) {
+        public Builder token(String token)
+        {
             this.token = token;
             return this;
         }
-        public JDR build() {
-            if (token == null) {
+        public JDR build()
+        {
+            if (token == null)
+            {
                 throw new IllegalArgumentException("The provided token cannot be null!");
             }
             return new JDRImpl(token);

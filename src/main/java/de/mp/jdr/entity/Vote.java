@@ -11,43 +11,61 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class Vote {
-    public static boolean isVoted(String id) {
+    public static boolean isVoted(String id)
+    {
         String token = JDRImpl.getToken();
-        if(token == null) {
+        if(token == null)
+        {
             return false;
         }
-        try{
+
+        try
+        {
             final JSONObject jsonObject = getObjectFromWebsite("https://discordrobots-api.000webhostapp.com/votes/test.php?token=" + token + "&id=" + id);
             return jsonObject.getBoolean("isVoted");
-        }catch(Exception e) {
+        }
+        catch(Exception e)
+        {
             e.printStackTrace();
             return false;
         }
     }
-    public static boolean isVoted(long id) {
+
+    public static boolean isVoted(long id)
+    {
         String token = JDRImpl.getToken();
-        if(token == null) {
+        if(token == null)
+        {
             return false;
         }
-        try{
+
+        try
+        {
             final JSONObject jsonObject = getObjectFromWebsite("https://discordrobots-api.000webhostapp.com/votes/test.php?token=" + token + "&id=" + id);
             return jsonObject.getBoolean("isVoted");
-        }catch(Exception e) {
+        }
+        catch(Exception e)
+        {
             e.printStackTrace();
             return false;
         }
     }
-    private static JSONObject getObjectFromWebsite(final String url) throws IOException {
-        try (InputStream inputStream = new URL(url).openStream()) {
+
+    private static JSONObject getObjectFromWebsite(final String url) throws IOException
+    {
+        try (InputStream inputStream = new URL(url).openStream())
+        {
             final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
             final String rawJsonText = read(bufferedReader);
             return new JSONObject(rawJsonText);
         }
     }
-    private static String read(final Reader reader) throws IOException {
+    private static String read(final Reader reader) throws IOException
+    {
         final StringBuilder stringBuilder = new StringBuilder();
         int counter;
-        while((counter = reader.read()) != -1) {
+        while((counter = reader.read()) != -1)
+        {
             stringBuilder.append((char) counter);
         }
         return stringBuilder.toString();
