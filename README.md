@@ -35,6 +35,8 @@ Replace `VERSION` with the latest version or commit hash. The latest version can
 
 #### Maven
 
+If Maven doesnt work, please download the .jar File and add it to your Bot
+
 ```xml
 <repositories>
     <repository>
